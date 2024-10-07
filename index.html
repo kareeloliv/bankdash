@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>BankDash</title>
+	<link rel="stylesheet" href="./css/main.min.css" />
+
+	<link rel="icon" type="image/x-icon" href="./img/logo.svg">
+	<link rel="apple-touch-icon" sizes="180x180" href="./img/logo.svg">
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__container">
+			<div class="header__content">
+				<div class="header__sidebar-burger burger"><span></span></div>
+				<div class="header__page-title">Setting</div>
+				<div class="header__search">
+					<svg class="icon icon--search">
+						<use href="./img/svgsprite/sprite.symbol.svg#search"></use>
+					</svg>
+					<input type="search" class="" placeholder="Search for something">
+				</div>
+				<a class="header__settings" href="#">
+					<svg class="icon icon--settings-line">
+						<use href="./img/svgsprite/sprite.symbol.svg#settings-line"></use>
+					</svg>
+				</a>
+				<a class="header__notification" href="#">
+					<svg class="icon icon--notification">
+						<use href="./img/svgsprite/sprite.symbol.svg#notification"></use>
+					</svg>
+				</a>
+				<a class="header__user" href="#">
+					<picture>
+						<source srcset="./img/user-image.webp 1x" type="image/webp">
+						<source srcset="./img/user-image.png 1x" type="image/png">
+						<img src="./img/user-image.png" alt="">
+					</picture>
+				</a>
+			</div>
+		</div>
+	</header>
+	<div class="sidebar">
+		<a class="sidebar__logo" href="#">
+			<img src="./img/logo.svg" alt="">
+			BankDash.
+		</a>
+		<div class="sidebar__menu sidebar-menu">
+			<nav class="sidebar-menu__nav">
+				<ul class="sidebar-menu__list">
+					<li class="sidebar-menu__item">
+						<a href="#" class="sidebar-menu__link">
+							<svg class="icon icon--home">
+								<use href="./img/svgsprite/sprite.symbol.svg#home"></use>
+							</svg>
+							Dashboard
+						</a>
+					</li>
+					<li class="sidebar-menu__item">
+						<a href="#" class="sidebar-menu__link">
+							<svg class="icon icon--transfer">
+								<use href="./img/svgsprite/sprite.symbol.svg#transfer"></use>
+							</svg>
+							Transactions
+						</a>
+					</li>
+					<li class="sidebar-menu__item">
+						<a href="#" class="sidebar-menu__link">
+							<svg class="icon icon--user">
+								<use href="./img/svgsprite/sprite.symbol.svg#user"></use>
+							</svg>
+							Accounts
+						</a>
+					</li>
+					<li class="sidebar-menu__item">
+						<a href="#" class="sidebar-menu__link">
+							<svg class="icon icon--investment">
+								<use href="./img/svgsprite/sprite.symbol.svg#investment"></use>
+							</svg>
+							Investments
+						</a>
+					</li>
+					<li class="sidebar-menu__item">
+						<a href="#" class="sidebar-menu__link">
+							<svg class="icon icon--credit-card">
+								<use href="./img/svgsprite/sprite.symbol.svg#credit-card"></use>
+							</svg>
+							Credit Cards
+						</a>
+					</li>
+					<li class="sidebar-menu__item">
+						<a href="#" class="sidebar-menu__link">
+							<svg class="icon icon--loan">
+								<use href="./img/svgsprite/sprite.symbol.svg#loan"></use>
+							</svg>
+							Loans
+						</a>
+					</li>
+					<li class="sidebar-menu__item">
+						<a href="#" class="sidebar-menu__link">
+							<svg class="icon icon--service">
+								<use href="./img/svgsprite/sprite.symbol.svg#service"></use>
+							</svg>
+							Services
+						</a>
+					</li>
+					<li class="sidebar-menu__item">
+						<a href="#" class="sidebar-menu__link">
+							<svg class="icon icon--econometrics">
+								<use href="./img/svgsprite/sprite.symbol.svg#econometrics"></use>
+							</svg>
+							My Privileges
+						</a>
+					</li>
+					<li class="sidebar-menu__item"><a href="#" class="sidebar-menu__link active">
+							<svg class="icon icon--settings">
+								<use href="./img/svgsprite/sprite.symbol.svg#settings"></use>
+							</svg>
+							Setting
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+
+	<main class="page page_main">
+
+		<section class="page_main__setting setting">
+			<div class="setting__container">
+				<div class="setting__wrapper">
+
+					<ul class="setting__buttons">
+						<li><a href="#tab-1" class="active">Edit Profile</a></li>
+						<li><a href="#tab-2">Preferences</a></li>
+						<li><a href="#tab-3">Security</a></li>
+					</ul>
+
+					<div class="setting__items">
+						<div class="setting__item setting-item" id="tab-1">
+							<div class="setting-item__main-photo">
+								<picture>
+									<source srcset="./img/user-image.webp 1x" type="image/webp">
+									<source srcset="./img/user-image.png 1x" type="image/png">
+									<img src="./img/user-image.png" alt="">
+								</picture>
+								<div class="setting-item__edit-photo">
+									<svg class="icon icon--pencil">
+										<use href="./img/svgsprite/sprite.symbol.svg#pencil"></use>
+									</svg>
+								</div>
+
+							</div>
+							<form class="setting-item__info form-info" action="">
+
+								<div class="form-info__row">
+									<div class="form-info__item">
+										<label for="your-name">Your Name</label>
+										<input type="text" id="your-name" name="your-name" placeholder="Charlene Reed" />
+									</div>
+									<div class="form-info__item">
+										<label for="username">User Name</label>
+										<input type="text" id="username" name="username" placeholder="Charlene Reed" />
+									</div>
+								</div>
+
+								<div class="form-info__row">
+									<div class="form-info__item">
+										<label for="email">Email</label>
+										<input type="email" id="email" name="email" placeholder="charlenereed@gmail.com" />
+									</div>
+									<div class="form-info__item">
+										<label for="password">Password</label>
+										<input type="password" id="password" name="password" placeholder="**********" />
+									</div>
+								</div>
+
+								<div class="form-info__row">
+									<div class="form-info__item">
+										<label for="dob">Date of Birth</label>
+										<select id="dob" name="dob">
+											<option value="25 January 1990">25 January 1990</option>
+											<option value="26 January 1990">26 January 1990</option>
+										</select>
+									</div>
+									<div class="form-info__item">
+										<label for="present-address">Present Address</label>
+										<input type="text" id="present-address" name="present-address" placeholder="San Jose, California, USA" />
+									</div>
+								</div>
+
+								<div class="form-info__row">
+									<div class="form-info__item">
+										<label for="permanent-address">Permanent Address</label>
+										<input type="text" id="permanent-address" name="permanent-address" placeholder="San Jose, California, USA" />
+									</div>
+									<div class="form-info__item">
+										<label for="city">City</label>
+										<input type="text" id="city" name="city" placeholder="San Jose" />
+									</div>
+								</div>
+
+								<div class="form-info__row">
+									<div class="form-info__item">
+										<label for="postal-code">Postal Code</label>
+										<input type="text" id="postal-code" name="postal-code" placeholder="45962" />
+									</div>
+									<div class="form-info__item">
+										<label for="country">Country</label>
+										<input type="text" id="country" name="country" placeholder="USA" />
+									</div>
+								</div>
+
+								<div class="form-info__item">
+									<button type="submit" class="form-info__button button">Save</button>
+								</div>
+							</form>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+
+
+	<script src="./js/index.min.js"></script>
+</body>
+
+</html>
